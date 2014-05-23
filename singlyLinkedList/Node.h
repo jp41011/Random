@@ -14,6 +14,7 @@ class Node
 
 		T getData();
 		Node<T>* getNext();
+		void setData(T newData);
 		void setNext(Node<T>* newNext=0);
 };
 

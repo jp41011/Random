@@ -28,10 +28,10 @@ template <typename T>
 Node<T>* Node<T>::getNext(){ return next; }
 
 template <typename T>
-void Node<T>::setNext(Node<T>* newNext)
-{
-	next = newNext;
-}
+void Node<T>::setData(T newData){ data = newData; }
+
+template <typename T>
+void Node<T>::setNext(Node<T>* newNext){ next = newNext; }
 
 // make sure initialized for char and int
 template class Node<char>;
