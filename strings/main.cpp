@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include <string>
 #include <ctype.h>
 
@@ -7,6 +8,7 @@ using std::getline;
 using std::cout;
 using std::endl;
 using std::string;
+using std::vector;
 
 // initialize array to 0's
 void initArray(int* array, int size)
@@ -46,6 +48,12 @@ char mostFreqChar(string& input)
 	return char('a'+maxIndex);
 }
 
+// will reverse the order of the words in the given sentence
+string reverseWords(string input)
+{
+
+}
+
 int main()
 {
 	string input = ""; // will store user input string
@@ -54,7 +62,9 @@ int main()
 		cout << "Input: ";
 		//cin >> input; // space is the delimiter
 		getline(cin, input); // to get entire line including spaces
+		cout << "User input: " << input << endl;
 		cout << "Most frequent: " << mostFreqChar(input) << endl;
+		cout << "Reverse Words: " << reverseWords(input) << endl;
 		cout << "--------------------" << endl;
 	}
 
